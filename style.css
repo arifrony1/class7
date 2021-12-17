@@ -1,0 +1,167 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-decoration: none;
+
+}
+
+/* global css */
+/* 1 heder start  */
+header {
+    background: rgb(0, 0, 0);
+    border-bottom: .1px solid black;
+    position: sticky;
+    top: 0;
+}
+
+/* header end  */
+/*2 container start  */
+.container {
+    max-width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 3 logo start  */
+.logo {
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+/* 4 navbar start  */
+ul.nabvar {
+    display: flex;
+
+}
+
+ul.nabvar li {
+    position: relative;
+}
+
+ul.nabvar li a {
+    padding: 20px 20px;
+    display: inline-block;
+    font-size: 18px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #fff;
+    font-weight: 600;
+
+}
+
+ul.nabvar li:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    
+
+}
+ul.nabvar li:hover a{
+    color: black;
+}
+
+/* 6 dropdown start  */
+
+.dropdown{
+    position: absolute;
+    background-color: grey;
+    width: 200px;
+    top: 100%;
+    left: 0;
+    display: none;
+}
+
+ul.nabvar{
+    position: relative;
+}
+ul.nabvar li:hover .dropdown{
+    display: block;
+}
+/* 7 sub dropdown menu start  */
+ul.sub_menu{
+    position: absolute;
+    background-color: grey;
+    width: 150px;
+    top: 0%;
+    left: 100%;
+    display: none;
+}
+ul.nabvar li{
+    position: relative;
+}
+.dropdown  li:hover .sub_menu{
+    display: block;
+    width: 200px;
+}
+
+/* slider css */
+.slider{
+   background-image:linear-gradient(to right,blue 0%, red 100%), url(slide.jfif);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:inherit;
+    height: 600px;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+}
+
+h1{
+    text-align: center;
+}
+/* border image start  */
+p{
+    border: 5px solid red;
+    display: inline-block;
+    
+}
+.bb{
+    border:5px solid green;
+    border-bottom: 6px dotted red;
+    display: inline-block;
+}
+.one {
+    width: 300px;
+    height: 300px;
+    border: solid;
+    margin: auto;
+    border-image-source: url(im.webp);
+    border-image-slice: 50;
+    border-image-width: 71px;
+    border-image-outset: 20px;
+}
+.one img{
+    width: 300px;
+    height: 300px;
+}
+.space{height: 100px;}
+.borders{
+    text-align: center;
+}
+.slider-content{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.slider-content form{
+    background-image: radial-gradient(red 5%, green 15%, blue 60%), url(im.webp);
+    margin-top: 100px;
+    padding: 100px;
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0px 0px 20px 5px rgb(110, 96, 96)inset;
+}
+.slider-content form input{
+    display: block;
+    height: 30px;
+    margin-bottom: 10px;
+    font-size: 17px;
+    padding-left: 5px;
+}
+.slider-content form input[type="button"] {
+    width: 100%;
+    background: rgb(34, 63, 56);
+    color: #fff;
+}
